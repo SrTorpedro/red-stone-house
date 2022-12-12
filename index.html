@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>RedStone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="text">
+            <div class="login">
+                <h1>LOGIN</h1>
+                <input id="user" placeholder="Usuário" type="text"></input>
+                <div id="error_name_log" class="error_divs"></div>
+
+                <input class="password" placeholder="Senha" type="password" id="pass_log"></input>
+                <div id="error_pass_log" class="error_divs"></div>
+
+                <div class="buttons">
+                    <a href="#" class="esq">ESQUECI A SENHA</a>
+                    <a href="./home/home.html" id="link_log" class="but" onclick="login()">Entrar</a>
+                </div>
+            </div>
+
+            <p>Ainda não possui conta? <strong><a href="../register/register.html" class="cad">Cadastre-se</a></strong></p>
+            
+        </div>
+        <div class="img"><img id="houseImg" src="images/img_login-register.jpg" alt="house image"></div>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>
