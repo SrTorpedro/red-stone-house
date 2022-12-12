@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStone | Comôdos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mainstyle.css">
+</head>
+
+<body>
+    <div id="topBar">
+        <img src="images/vector.svg" alt="logo" id="thunder">
+        <h1 id="logo">REDSTONE<span id="house">HOUSE</span></h1>
+
+        <p id="date"></p>
+        <img src="./images/perfil.png" alt="perfilPhoto" class="perfilPhoto">
+    </div>
+    <nav>
+        <a href="../home/home.html" class="optionpage">Início</a>
+        <div></div>
+        <a href="../aparelhos/aparelhos.html" class="optionpage">Aparelhos</a>
+        <div></div>
+        <a href="../estatisticas/estatistica.html" class="optionpage">Estatísticas</a>
+        <div></div>
+        <a href="#" class="optionpage">Cômodos</a>
+        <div></div>
+    </nav>
+
+
+    <main>
+        <div>
+            <div class="top">
+                <div class="order">
+                    <p>Ordenar por</p>
+                    <select class="selection">
+                        <option>Do maior gasto ao menor</option>
+                        <option>Do menor gasto ao maior</option>
+                        <option>Mais recente</option>
+                        <option>Menos recente</option>
+                    </select>
+                </div>
+
+                <button class="addButton" id="addButton">+</button>
+
+                <div class="addDiv" id="addDiv">
+
+                    <input type="text" class="input" id="inputName" placeholder="Nome do Cômodo" maxlength="40">
+
+                    <button class="addButton2" id="addButton2" onclick="adicionar()">+</button>
+
+                </div>
+                
+            </div>
+            <div class="graphicMenu">
+                <ul class="list" id="list">
+                    <li class="optionComodo">
+                        <div class="comodo"><p>Cozinha</p><img src="./images/lixeira.png" alt="lixeira" class="delete"></div>
+                        <div class="info">
+                            <ul class="listDevices">
+                                <li>Fogão</li>
+                                <li>Geladeira</li>
+                                <li>Microondas</li>
+                                <li>Lâmpada N° 2</li>
+                                <li>Torneira 1</li>
+                                <li>Torneira 2</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="optionComodo">
+                        <div class="comodo"><p>Sala de Estar</p><img src="./images/lixeira.png" alt="lixeira" class="delete"></div>
+                        <div class="info">
+                            <ul class="listDevices">
+                                <li>TV</li>
+                                <li>Aparelho de Som</li>
+                                <li>Lâmpada N° 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="optionComodo">
+                        <div class="comodo"><p>Quarto 1</p><img src="./images/lixeira.png" alt="lixeira" class="delete"></div>
+                        <div class="info">
+                            <ul class="listDevices">
+                                <li>Abajur</li>
+                                <li>Lâmpada N° 1</li>
+                                <li>TV 2</li>
+                                <li>PlayStation</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="graphic" id="graphic">
+
+        </div>
+        
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por <span><a href="#" id="yellow">RedStone House</a></span></p>
+        <a href="mailto:Redstone@gmail.com" class="mail">
+            <p>RedstoneH@gmail.com</p>
+        </a>
+        <div id="contactsEmp">
+            <a href="mailto:Redstone@gmail.com"><img src="./images/email.png" alt="emailPhoto" class="contacts"></a>
+            <img src="./images/site.png" alt="sitePhoto" class="contacts">
+        </div>
+    </footer>
+
+    <script src="./scripts/horario.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
