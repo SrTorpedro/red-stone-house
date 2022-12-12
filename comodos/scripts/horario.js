@@ -1,0 +1,6 @@
+var agora = new Date()
+var day = agora.getDate()
+var month = agora.getMonth()
+var year = agora.getFullYear()
+console.log(`${day}/${month+1}/${year}`)
+document.getElementById('date').innerText = (`${day}/${month+1}/${year}`)
