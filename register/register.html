@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="text2">
+            <h1>CADASTRO</h1>
+            <input type="text" placeholder="Nome Completo" id="name"></input>
+            <div id="error_name_reg" class="error_divs"></div>
+
+
+            <input type="email" placeholder="E-mail" id="email"></input>
+            <div id="error_email_reg" class="error_divs"></div>
+
+            <div class="pass">
+                <input class="password" type="password" placeholder="Senha" id="pass_reg"></input>
+                <input type="checkbox" id="button" onclick="show()">
+                <label for="button" class="showpass"><span class="lbltxt">Mostrar senha</span></label>
+            </div>
+
+            <div id="error_pass_reg" class="error_divs"></div>
+
+
+            <div class="conpassword">
+                <input type="password" placeholder="Confirmar senha" id="conpass"></input>
+            </div>
+            <div id="error_conpass_reg" class="error_divs"></div>
+
+
+            <div id="terms">
+            <input type="checkbox" name="terms" id="check"></input> Concordo com os <strong>termos de uso</strong> do <strong>RedStone House</strong>
+            </div>
+            <div id="error_term_reg" class="error_divs"></div>
+
+
+            <a href="#" class="but_reg" onclick="register()" id="cad">Cadastrar</a>
+        </div>
+
+        <div class="img"><img id="houseImg" src="../images/img_login-register.jpg" alt="house image"></div>
+    </main>
+    <script src="register.js"></script>
+</body>
+</html>
