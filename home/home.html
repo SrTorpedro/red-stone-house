@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="home.css">
+    <title>RedStone House</title>
+    
+    <script src="home.js"></script>
+</head>
+<body>
+
+    <div id="topBar">
+        <img src="../images/vector.svg" alt="logo" id="thunder">
+        <h1 id="logo">REDSTONE<span id="house">HOUSE</span></h1>
+
+        <div class="date" id="date"></div>
+        <img src="../images/perfil.png" alt="perfilPhoto" class="perfilPhoto">
+    </div>
+
+    <nav>
+        <a href="#" class="optionpage">Início</a>
+        <a href="../aparelhos/aparelhos.html" class="optionpage">Aparelhos</a>
+        <a href="../estatisticas/estatistica.html" class="optionpage">Estatísticas</a>
+        <a href="../comodos/comodos.html" class="optionpage">Cômodos</a>
+    </nav>
+
+
+
+    <main>
+        <h2>Consumo Energia:</h2>
+        <article class="conteiner_data">
+            <section>
+
+                <h3>Gasto mensal</h3>
+                <div class="results">600</div>
+                <!--Onde vai aparecer os resultados de gastos-->
+
+            </section>
+
+            <section>
+
+                <h3>Gasto p/dia</h3>
+                <div class="results">40</div>
+                <!--Onde vai aparecer os resultados de gastos-->
+
+            </section>
+
+            <section class="mensal_limit">
+
+                <div class="limit">
+                    <h3>Limite mensal</h3>
+                    <a href="#"><img src="../images/edit.png" alt="Editar" class="edit" id="edit" onclick="edit_energy()"></a>
+
+                    <!--Link para ajustar o limite de gastos-->
+                </div>
+
+                <div class="results" id="results_limit_energy">500</div>
+                
+                <div class="espaço_edi" id="espaço_edi_energy"></div>
+                <!--Onde vai aparecer os resultados de gastos-->
+
+            </section>
+        </article>
+
+
+        
+        <h2>Consumo Água:</h2>
+        <article class="conteiner_data">
+            <section>
+
+                <h3>Gasto mensal</h3>
+                <div class="results_agua">600</div>
+                <!--Onde vai aparecer os resultados de gastos-->
+
+            </section>
+
+            <section>
+
+                <h3>Gasto p/dia</h3>
+                <div class="results_agua">40</div>
+                <!--Onde vai aparecer os resultados de gastos-->
+
+            </section>
+
+            <section class="mensal_limit">
+
+                <div class="limit">
+                    <h3>Limite mensal</h3>
+                    <a href="#"><img src="../images/edit.png" alt="Editar" class="edit" id="edit" onclick="edit_agua()"></a>
+
+                    <!--Link para ajustar o limite de gastos-->
+                </div>
+
+                <div class="results_agua" id="results_limit_agua">500</div>
+                
+                <div class="espaço_edi" id="espaço_edi_agua"></div>
+                <!--Onde vai aparecer os resultados de gastos-->
+
+            </section>
+        </article>
+
+
+        <article class="conteiner_gadgets">
+
+            <div class="plus">
+                <h2>Principais aparelhos:</h2>
+                <button id="plus" onclick="plus()" ><img src="../images/plus.png" alt="plus"></button>
+
+                <div id="espaço_plus"></div>
+            </div>
+
+            <div id="espaço_plus_caixa"></div>
+
+            <div class="miolo">
+
+                <section class="gadgets" id="gadgets">
+
+                    <div id="div_ap1">
+                        <p>Geladeira  /  Cozinha</p>
+                        <button id="delete" >
+                            <img src="../images/lixeira.png" alt="lixeira" class="delete_img">
+                        </button>
+                    </div>
+
+                    <div id="div_ap2">
+                        <p>Computador  / Quarto principal</p>
+                        <button id="delete" >
+                            <img src="../images/lixeira.png" alt="lixeira" class="delete_img">
+                        </button>
+                    </div>
+
+                    <div id="div_ap3">
+                        <p>Ar-condicionado  /  Quarto principal</p>
+                        <button id="delete" >
+                            <img src="../images/lixeira.png" alt="lixeira" class="delete_img">
+                        </button>
+                    </div>
+
+                    <div id="div_ap4">
+                        <p>Televisão  / Escritório</p>
+                        <button id="delete" >
+                            <img src="../images/lixeira.png" alt="Lixeira" class="delete_img">
+                        </button>
+                    </div>
+
+                </section>
+
+                <section class="graphic"></section>
+
+            </div>
+        </article>
+
+
+        <article class="conteiner_3">
+
+            <h2>Dicas de consumo:</h2>
+
+            <div class="conteiner_tips">
+                <section class="tips_1">
+                    <h3>Aparelhos com defeito</h3>
+                    <p>Procure analisar se seus aparelhos estão funcionando corretamente, pois caso esteja com defeito pode acabar consumindo mais que o normal.</p>
+                </section>
+                <section class="tips_2">
+                    <h3>Funções de Stand by</h3>
+                    <p>Caso os seus aparelhos tenham a função soneca ou stand by, sempre que for sair de casa é aconselhável que seja ativada essa função.</p>
+                </section>
+                <section class="tips_3">
+                    <h3>Educação financeira</h3>
+                    <p>Se você não estiver conseguindo pagar todas as contas, tente cortar gastos, como reduzir o tempo do chuveiro elétrico ou de jogatina.</p>
+                </section>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+
+        <p>Desenvolvido por <a href="#" id="yellow">RedStone House</a></p>
+
+        <a href="mailto:Redstone@gmail.com" class="mail">
+            <p>RedstoneH@gmail.com</p>
+        </a>
+
+        <div id="contactsEmp">
+            <a href="mailto:Redstone@gmail.com"><img src="../images/email.png" alt="emailPhoto" class="contacts">
+            </a>
+
+            <a href="#"><img src="../images/site.png" alt="sitePhoto" class="contacts"></a>
+            
+        </div>
+    </footer>
+
+    <script>
+        var agora = new Date()
+        var day = agora.getDate()
+        var month = agora.getMonth()
+        var year = agora.getFullYear()
+        console.log(`${day}/${month+1}/${year}`)
+        document.getElementById('date').innerText = (`${day}/${month+1}/${year}`)
+    </script>
+</body>
+</html>
